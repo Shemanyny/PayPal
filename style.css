@@ -1,0 +1,719 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Navbar styles */
+.paypal-nav {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo .paypal-logo {
+  color: #003087;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+  transition: color 0.2s;
+}
+.nav-links a {
+  font-size: 12px;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -200px;
+  width: 600px;
+  background-color: #012169;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.personal-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-container {
+  padding: 20px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+
+.dropdown-header h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.close-dropdown {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: none;
+}
+
+.dropdown-columns {
+  display: flex;
+  gap: 30px;
+}
+
+.dropdown-column {
+  flex: 1;
+}
+
+.dropdown-column h4 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.dropdown-column h5 {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+.dropdown-column ul {
+  list-style: none;
+}
+
+.dropdown-column li {
+  margin-bottom: 12px;
+}
+
+.dropdown-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.dropdown-column a:hover {
+  color: #9da5aa;
+  text-decoration: underline;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: white;
+  color: #0070ba;
+  border: 1px solid #0070ba;
+}
+
+.login-btn:hover {
+  background-color: #f5f9ff;
+}
+
+.signup-btn {
+  background-color: #0070ba;
+  color: white;
+  border: 1px solid #0070ba;
+}
+
+.signup-btn:hover {
+  background-color: #005ea6;
+}
+
+.background-image {
+  background-image: url("img/modern-asian-girl-sunglasses-using-her-mobile-phone-smiling-looking-happy-posing-against-whit.jpg");
+  max-width: 100%;
+  height: 900px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chl1 {
+  position: absolute;
+  width: 60%;
+  height: 40vh;
+  top: 35%;
+  left: 50%;
+  transform: translate(-10%);
+}
+.ff {
+  background-color: #005ea6;
+}
+
+.chl1 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signup-section {
+  margin-top: 450px;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.signup-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-headline {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.signup-button {
+  background-color: #0070ba;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #005ea6;
+  cursor: pointer;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-section h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #9da5aa;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.intro-section h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(82, 79, 79);
+  font-size: 26px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.tab-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.tab-links a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+.tab-links a.active {
+  border-bottom: 2px solid;
+  color: #0070ba;
+}
+
+.tab-links :hover {
+  text-decoration: underline;
+  border-bottom: #005ea6;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.step p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.learn-btn {
+  margin-top: 40px;
+}
+
+.learn-btn a {
+  font-size: 5px;
+  padding: 12px 32px;
+  border: 1.5px solid #0070ba;
+  color: #005eb4;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/*.learn-btn a:hover {
+  background-color: #0070ba;
+  color: white;
+}*/
+
+.gradient-background {
+  background: radial-gradient(circle at center, #008ed3 0%, #004a9c 100%);
+  padding: 60px 20px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: white;
+  font-weight: lighter;
+}
+
+.columns {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cta-section {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #008bd1;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005ea6;
+}
+.cta-section:hover a {
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  padding: 40px 20px;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.footer-bottom {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-top {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-links,
+.footer-legal {
+  margin: 10px 0;
+}
+
+.links {
+  grid-template-columns: 1fr auto;
+}
+
+.license {
+  margin-top: 15px;
+  color: #555;
+  max-width: 800px;
+
+  margin-right: auto;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .columns {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: #cce6ff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    display: none;
+  }
+
+  .personal-dropdown:hover .dropdown-menu {
+    transform: none;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+  }
+
+  .close-dropdown {
+    display: block;
+  }
+
+  .nav-buttons {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .chl1 {
+    position: absolute;
+    width: 60%;
+    height: 40vh;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .chl1 h1 {
+    text-align: center;
+    color: black(0, 42, 228);
+    font-size: 24px;
+  }
+
+  .background-image {
+    background-image: url("img/modern-asian-girl-sunglasses-using-her-mobile-phone-smiling-looking-happy-posing-against-whit.jpg");
+    max-width: 100%;
+    height: 900px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .signup-section {
+    margin-top: 450px;
+    padding: 50px 100;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    width: 320px;
+    background-color: #012169;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 50;
+  }
+
+  .personal-dropdown:hover .dropdown-menu {
+    opacity: 4;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 425px) {
+  .background-image {
+    background-image: url("img/modern-asian-girl-sunglasses-using-her-mobile-phone-smiling-looking-happy-posing-against-whit.jpg");
+    width: 425px;
+    height: 597px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+}
+
+  .chl1 h1 {
+    text-align: justify;
+    color: black(0, 42, 228);
+    font-size: 24px;
+  }
+
+  .signup-section {
+    margin-top: 350px;
+    padding: 50px 100;
+  }
+
+
+@media (max-width: 375px) {
+  .background-image {
+    background-image: url("img/modern-asian-girl-sunglasses-using-her-mobile-phone-smiling-looking-happy-posing-against-whit.jpg");
+    width: 375px;
+    height: 597px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  .footer-bottom ul li {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .background-image {
+    background-image: url("img/modern-asian-girl-sunglasses-using-her-mobile-phone-smiling-looking-happy-posing-against-whit.jpg");
+    width: 320px;
+    height: 597px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: cover;
+  }
+
+  .chl1 h1 {
+    text-align: left;
+    color: black(0, 42, 228);
+    font-size: 24px;
+  }
+
+  .signup-section {
+    margin-top: 400px;
+    padding: 50px 100;
+  }
+  .signup-button {
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .footer-bottom ul li {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    width: 320px;
+    background-color: #012169;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 50;
+  }
+
+  .personal-dropdown:hover .dropdown-menu {
+    opacity: 4;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
